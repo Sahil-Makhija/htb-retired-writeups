@@ -1,0 +1,11 @@
+# Ignore all markdown files
+*.md
+
+!README.md
+
+# Don't ignore the following files
+!Dog.md
+!Haircut.md
+!Joker.md
+!Lazy.md
+!Sneaky.md
