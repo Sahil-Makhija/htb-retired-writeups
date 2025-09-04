@@ -91,6 +91,7 @@ $ cat dirbust/root | jq '. | select(.type == "response")'.path -r
 ### Logout Page
 
 - It clears both of my cookies, and redirects me to root page `/`.
+
 ### JWT Token
 
 - Decoding the assigned token in [**jwt.io**](https://jwt.io/) shows this.
@@ -126,8 +127,8 @@ $ cat dirbust/root | jq '. | select(.type == "response")'.path -r
 ![[Pasted image 20250903134733.png]]
 
 - At the home page, it says `Welcome back! conner. Visit /notes to access your notes or select it from navbar.` 
-- **`/<uuid>/notes`** - Without loggin in, this routes returns `404`.
 - From here, I will enumerate what is available at `/notes` plus I will run `feroxbuster` again with the cookies set, just in case I find something hidden but I have access to after logging in .
+
 ### Feroxbuster /w Cookies
 
 - No new routes found, just the previous findings with a new `/<uuid>/notes` route.
